@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(cse-tut)
+project(cse-tut VERSION 0.1)
 
-add_executable(cse-tut src/main.cpp)
+set(SOURCE_LIB src/)
+include_directories(include)
+
+file(GLOB SOURCES "src/*.cpp")
+add_executable(cse-tut ${SOURCES})
 
