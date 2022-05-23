@@ -12,7 +12,7 @@
  * \brief Evaluate a function problem
 
  * Evaluates a polinomial entered as a vector. The evaluation happens as:
- * \f[ f(x) = \Sum_i=0^n a_i x^i  \f]
+ * \f[ f(x) = \sum_{i=0}^n a_i x^i  \f]
 
  * \param x [in] The evaluation location
  * \param multipl [in] The multipliers, in increasing order
@@ -26,3 +26,4 @@ double Polinom(double  x, const std::vector<double>& multipl)
 	}
 	return sum;
 }
+
